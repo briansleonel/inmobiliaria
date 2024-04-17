@@ -17,7 +17,7 @@ interface NavMenuMobileProps extends Props {
 
 export function NavContainer({ children }: Props) {
     return (
-        <nav className="w-full bg-neutral-950 text-neutral-50 p-4 md:px-16 lg:px-24 flex justify-between">
+        <nav className="w-full fixed z-50 bg-neutral-950 text-neutral-50 p-4 md:px-16 lg:px-24 flex justify-between">
             {children}
         </nav>
     );
