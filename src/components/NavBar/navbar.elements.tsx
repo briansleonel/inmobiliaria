@@ -28,7 +28,7 @@ export function NavLinkTo({ to, children, onClick }: NavLinkProps) {
         <NavLink
             to={to}
             className={({ isActive }) =>
-                `p-1 px-4 text-center w-full ${styles.navLink} ${
+                `p-1 px-4 text-center w-full flex items-center justify-center text-2xl md:text-lg lg:text-base ${styles.navLink} ${
                     isActive ? styles.navLinkActive : ""
                 }`
             }
@@ -50,7 +50,7 @@ export function NavMenu({ children }: Props) {
 export function NavMenuMobile({ children, open }: NavMenuMobileProps) {
     return (
         <div
-            className={`flex flex-col gap-8 w-full bg-neutral-900 absolute top-0 h-fit p-4 pb-8 md:hidden transition-all duration-500 ${
+            className={`flex flex-col gap-8 w-full h-screen bg-neutral-900 absolute top-0 p-4 pb-8 md:hidden transition-all duration-500 ${
                 open ? "left-0" : "-left-full"
             }`}
         >

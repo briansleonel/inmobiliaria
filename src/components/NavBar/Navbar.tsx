@@ -36,24 +36,28 @@ function NavBar() {
                 >
                     <XMarkIcon className="w-8" />
                 </div>
-                <NavLinkTo
-                    to="/"
-                    onClick={() => setShowMobileMenu(!showMobileMenu)}
-                >
-                    Home
-                </NavLinkTo>
-                <NavLinkTo
-                    to="/about"
-                    onClick={() => setShowMobileMenu(!showMobileMenu)}
-                >
-                    Nosotros
-                </NavLinkTo>
-                <NavLinkTo
-                    to="/contact"
-                    onClick={() => setShowMobileMenu(!showMobileMenu)}
-                >
-                    Contacto
-                </NavLinkTo>
+                <div className="w-full h-full flex flex-col justify-center p-12">
+                    <div className="flex flex-col gap-12">
+                        <NavLinkTo
+                            to="/"
+                            onClick={() => setShowMobileMenu(!showMobileMenu)}
+                        >
+                            Home
+                        </NavLinkTo>
+                        <NavLinkTo
+                            to="/about"
+                            onClick={() => setShowMobileMenu(!showMobileMenu)}
+                        >
+                            Nosotros
+                        </NavLinkTo>
+                        <NavLinkTo
+                            to="/contact"
+                            onClick={() => setShowMobileMenu(!showMobileMenu)}
+                        >
+                            Contacto
+                        </NavLinkTo>
+                    </div>
+                </div>
             </NavMenuMobile>
         </NavContainer>
     );
